@@ -1,0 +1,58 @@
+:root {
+  --card-width: 320px;
+  --card-height: 200px;
+  --color-circle: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  background-color: #e3e3e3;
+  padding-top: 50px;
+}
+body > * {
+  margin: 0 auto;
+}
+.cardContainer {
+  width: var(--card-width);
+  height: var(--card-height);
+  background: linear-gradient(#e66465, #0b1de2);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.cardContainer > * {
+  margin: 0 auto;
+}
+#circle1 {
+  width: calc(var(--card-width) / 2);
+  height: calc(var(--card-width) / 2);
+  border-radius: 50%;
+  background-color: var(--color-circle);
+  position: absolute;
+  top: -20px;
+  right: -70px;
+}
+#circle2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--color-circle);
+  position: absolute;
+  right: -50px;
+  bottom: -100px;
+}
+
+.infoText {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.infoText > h1 {
+  margin-top: 10px;
+}
+.infoText > h4 {
+  margin-top: 50px;
+}
+.infoText > h5 {
+  margin-top: 30px;
+}
