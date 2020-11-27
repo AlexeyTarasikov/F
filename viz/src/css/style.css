@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(77, 106, 168); 
+    margin: 0;
+}
+
+.userCardContainer{
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    border-radius: 28px;
+    background-color: rgb(216, 205, 106);
+}
+.userCardHeader{
+    background-image: url(https://art-oboi.com.ua/img/gallery/30/thumbs/thumb_m_15506.jpg);
+    background-size: cover;
+    height: 150px;
+    background-repeat: no-repeat;
+    border-radius: 30px 30px 0px 0px;
+}
+
+/*.userPhoto{
+    height: 100px;
+    width: 100px;
+}
+*/
+.userPhoto img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+}
+.userInfo{
+    position: relative;
+    bottom: 100px;
+
+}
+.iconContainer{
+    position: relative;
+    bottom: 100px;
+}
+.iconContainer img{
+    padding: 18px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(158, 86, 86);
+    margin: 5px;
+}
+h6{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    margin: 5px;
+}
+h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    margin: 5px;
+}
