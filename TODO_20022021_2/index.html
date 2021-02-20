@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="./assets/css/css.style">
+    <script defer src="./assets/js/index.js"></script>
+</head>
+<body>
+
+    <div class="app-container" id="taskList">
+        <h1 class="app-header">TO DO LIST</h1>
+        <div class="add-task">
+            <input type="text" autocomplete="off" placeholder="Add New Task" v-model="tasks.name" @keyup.enter="newItem"
+                class="task-input">
+            <input type="submit" value="" class="submit-task" @click="newItem" title="Add Task">
+        </div>
+        <ul class="task-list">
+            <li class="task-list-item" v-for="task in tasks">
+                <label class="task-list-item-label">
+                    <input type="checkbox">
+                    <span>{{task.name}}</span>
+                </label>
+                <span @click="delItem(task)" class="delete-btn" title="Delete Task">{{task.del}}</span>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
